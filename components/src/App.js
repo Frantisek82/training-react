@@ -3,7 +3,7 @@ import Welcome from "./components/Welcome";
 
 function App() {
   return (
-    <div class="main">
+    <div className="main">
       <Welcome name="Laura"></Welcome>
       <Welcome name="Jane"></Welcome>
       <Welcome name="World"></Welcome>
