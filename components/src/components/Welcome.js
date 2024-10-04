@@ -11,7 +11,7 @@ function Welcome(props) {
   };
   return (
     <div>
-      <h1>Hello, {props.name}!</h1>
+      <h1>Hello, {props.userName}!</h1>
       <NewDate today={props.today}></NewDate>
       <Person info={data}></Person>
     </div>

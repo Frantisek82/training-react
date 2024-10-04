@@ -18,9 +18,9 @@ function App() {
 
   return (
     <div className="main">
-      <Welcome name="Laura" today={today}></Welcome>
-      <Welcome name="Jane" today={today}></Welcome>
-      <Welcome name="World" today={today}></Welcome>
+      <Welcome userName="Laura" today={today}></Welcome>
+      <Welcome userName="Jane" today={today}></Welcome>
+      <Welcome userName="World" today={today}></Welcome>
     </div>
   );
 }
