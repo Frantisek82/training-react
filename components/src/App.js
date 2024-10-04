@@ -3,16 +3,18 @@ import Welcome from "./components/Welcome";
 
 function App() {
   const today = new Date(Date.now()).toLocaleDateString();
-  const veryWelcome = (today) => {
-    console.log(today);
-    let div = document.createElement("div");
-    let h1 = document.createElement("h1");
-    div.appendChild(h1);
-    let prap = {
-      userName: "John",
-      todayDate: today,
-    };
-  };
+
+  // Another way to create the same thing
+  // const veryWelcome = (today) => {
+  //   console.log(today);
+  //   let div = document.createElement("div");
+  //   let h1 = document.createElement("h1");
+  //   div.appendChild(h1);
+  //   let prap = {
+  //     userName: "John",
+  //     todayDate: today,
+  //   };
+  // };
 
   return (
     <div className="main">
