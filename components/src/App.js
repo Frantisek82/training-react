@@ -1,5 +1,6 @@
 import "./App.css";
 import Welcome from "./components/Welcome";
+import Main from "./Main";
 
 function App() {
   const today = new Date(Date.now()).toLocaleDateString();
@@ -17,11 +18,11 @@ function App() {
   // };
 
   return (
-    <div className="main">
+    <Main>
       <Welcome userName="Laura" today={today}></Welcome>
       <Welcome userName="Jane" today={today}></Welcome>
       <Welcome userName="World" today={today}></Welcome>
-    </div>
+    </Main>
   );
 }
 
