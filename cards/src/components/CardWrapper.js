@@ -1,4 +1,4 @@
-// import './CardWrapper.css';
+import './CardWrapper.css';
 
 function CardWrapper(props) {
   return <div className="outer-card">{props.children}</div>;
