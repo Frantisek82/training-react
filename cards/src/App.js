@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faDollarSign, faAddressBook, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 
 import "./App.css";
 import CardWrapper from "./components/CardWrapper";
@@ -33,10 +33,24 @@ function App() {
           <FontAwesomeIcon icon={faStar} />
           <FontAwesomeIcon icon={faStar} />
         </div>
-        <div>105 Reviews</div>
+        <div>(105 Reviews)</div>
+      </div>
+      <div className="icons">
+        <div className="verified">
+          <FontAwesomeIcon icon="fa-solid fa-circle-check" />
+          <span>Verified</span>
+        </div>
+        <span>
+        <FontAwesomeIcon icon={faDollarSign} />
+        </span>
+        <span>
+        <FontAwesomeIcon icon={faAddressBook} />
+        </span>
+        <span>
+        <FontAwesomeIcon icon={faPhoneFlip} />
+        </span>
       </div>
       {/* <FontAwesomeIcon icon={faEnvelope} /> */}
-      {/* <FontAwesomeIcon icon="fa-solid fa-circle-check" /> */}
     </CardWrapper>
   );
 }
