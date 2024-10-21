@@ -1,6 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faDollarSign, faAddressBook, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faStar,
+  faEnvelope,
+  faDollarSign,
+  faAddressBook,
+  faPhoneFlip,
+  faCircleCheck,
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import CardWrapper from "./components/CardWrapper";
 import freelancer1 from "/var/www/Node/training-react/cards/src/assets/img/freelancer1.jpg";
@@ -37,20 +43,22 @@ function App() {
       </div>
       <div className="icons">
         <div className="verified">
-          <FontAwesomeIcon icon="fa-solid fa-circle-check" />
+          <FontAwesomeIcon icon={faCircleCheck} />
           <span>Verified</span>
         </div>
         <span>
-        <FontAwesomeIcon icon={faDollarSign} />
+          <FontAwesomeIcon icon={faDollarSign} />
         </span>
         <span>
-        <FontAwesomeIcon icon={faAddressBook} />
+          <FontAwesomeIcon icon={faEnvelope} />
         </span>
         <span>
-        <FontAwesomeIcon icon={faPhoneFlip} />
+          <FontAwesomeIcon icon={faAddressBook} />
+        </span>
+        <span>
+          <FontAwesomeIcon icon={faPhoneFlip} />
         </span>
       </div>
-      {/* <FontAwesomeIcon icon={faEnvelope} /> */}
     </CardWrapper>
   );
 }
