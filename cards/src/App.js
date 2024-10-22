@@ -9,20 +9,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import CardWrapper from "./components/CardWrapper";
-import freelancer1 from "/var/www/Node/training-react/cards/src/assets/img/freelancer1.jpg";
+import freelancer1 from "./assets/img/freelancer1.jpg";
 
 function App() {
-
-  const freelancer = [
-    {
-      id: 0,
-      title: "MR",
-      lastName: "ROBERT",
-      role: "UI/UX Designer",
-      fee: 85,
-      reviews: 105,
-    },
-  ];
+  const freelancer = {
+    id: 0,
+    title: "MR",
+    lastName: "ROBERT",
+    role: "UI/UX Designer",
+    fee: 85,
+    reviews: 105,
+  };
 
   return (
     <div className="card-container">
@@ -34,12 +31,14 @@ function App() {
           </div>
         </div>
         <div className="info-container">
-          <h3>MR ROBERT</h3>
-          <p>UI/UX Designer</p>
+          <h3>
+            {freelancer.title} {freelancer.lastName}
+          </h3>
+          <p>{freelancer.role}</p>
         </div>
         <div className="hire">
           <div>
-            Rate: <span className="price">$85/hr</span>
+            Rate: <span className="price">${freelancer.fee}/hr</span>
           </div>
           <button className="hire-button">Hire Me</button>
         </div>
@@ -52,7 +51,7 @@ function App() {
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
           </div>
-          <div>(105 Reviews)</div>
+          <div>({freelancer.reviews} Reviews)</div>
         </div>
         <div className="icons">
           <div className="verified">
