@@ -12,6 +12,7 @@ import CardWrapper from "./components/CardWrapper";
 import freelancer1 from "/var/www/Node/training-react/cards/src/assets/img/freelancer1.jpg";
 
 function App() {
+
   const freelancer = [
     {
       id: 0,
