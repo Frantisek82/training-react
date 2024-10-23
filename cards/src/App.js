@@ -1,4 +1,5 @@
 import "./App.css";
+import CardsContainer from "./components/CardsContainer";
 import CardWrapper from "./components/CardWrapper";
 import CardImg from "./components/CardImg";
 import CardInfo from "./components/CardInfo";
@@ -8,12 +9,16 @@ function App() {
   console.log(freelancers);
 
   return (
-    <div className="card-container">
-      <CardWrapper>
-        <CardImg freelancer={freelancers[0]}></CardImg>
-        <CardInfo freelancer={freelancers[0]}></CardInfo>
-      </CardWrapper>
-    </div>
+    <CardsContainer>
+      {freelancers.map((freelancer, index) => {
+        return (
+          <CardWrapper key={index}>
+            <CardImg freelancer={freelancers[index]}></CardImg>
+            <CardInfo freelancer={freelancers[index]}></CardInfo>
+          </CardWrapper>
+        );
+      })}
+    </CardsContainer>
   );
 }
 
