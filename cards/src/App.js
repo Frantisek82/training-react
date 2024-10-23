@@ -1,7 +1,7 @@
 import "./App.css";
-import CardWrapper from "./components/CardWrapper";
-import CardImg from "./components/CardImg";
 import CardInfo from "./components/CardInfo";
+import CardImg from "./components/CardImg";
+import CardWrapper from "./components/CardWrapper";
 
 function App() {
   return (
