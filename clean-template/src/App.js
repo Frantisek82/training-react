@@ -1,10 +1,12 @@
 // import './App.css';
 
 function App() {
-  const numbers = ["John","James","Jane",]
+  const users = ["John", "James", "Jane"];
   return (
     <ul>
-      
+      {users.map((user, index) => {
+        return <li key={index}>{user}</li>;
+      })}
     </ul>
   );
 }
