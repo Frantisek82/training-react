@@ -9,25 +9,16 @@ import {
   faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
-function CardInfo() {
-  const freelancer = {
-    id: 0,
-    title: "MR",
-    lastName: "ROBERT",
-    role: "UI/UX Designer",
-    fee: 85,
-    reviews: 105,
-  };
-
+function CardInfo(props) {
   return (
     <div className="info-container">
       <h3>
-        {freelancer.title} {freelancer.lastName}
+        {props.freelancer.title} {props.freelancer.last_name}
       </h3>
-      <p>{freelancer.role}</p>
+      <p>{props.freelancer.role}</p>
       <div className="hire">
         <div>
-          Rate: <span className="price">${freelancer.fee}/hr</span>
+          Rate: <span className="price">${props.freelancer.fee}/hr</span>
         </div>
         <button className="hire-button">Hire Me</button>
       </div>
@@ -40,7 +31,7 @@ function CardInfo() {
           <FontAwesomeIcon icon={faStar} />
           <FontAwesomeIcon icon={faStar} />
         </div>
-        <div>({freelancer.reviews} Reviews)</div>
+        <div>({props.freelancer.reviews} Reviews)</div>
       </div>
       <div className="icons">
         <div className="verified">

@@ -1,5 +1,5 @@
 .info-container {
-  padding: 3em;
+  padding: 2em;
 }
 .info-container h3,
 .info-container p {
@@ -73,8 +73,8 @@
   padding: 0 6px 0 8px;
   border-radius: 0.8rem;
   position: absolute;
-  top: 456px;
-  left: 54px;
+  top: 409px;
+  left: 80px;
   font-weight: 400;
 }
 .icons .circle {

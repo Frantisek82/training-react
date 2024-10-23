@@ -1,11 +1,10 @@
 import "./CardImg.css";
-import image from "../assets/img/freelancer1.jpg";
 
-function CardImg() {
+function CardImg(props) {
   return (
     <div className="img-container">
       <div className="img-wrapper">
-        <img src={image} alt="freelancer-one" />
+        <img src={props.freelancer.img.path} alt={props.freelancer.img.text} />
         <span className="dot"></span>
       </div>
     </div>
