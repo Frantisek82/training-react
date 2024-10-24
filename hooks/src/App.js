@@ -31,8 +31,19 @@ function App() {
   const handleMenosOne = () => {
     setCount(count - 1);
   };
-  const handleMultipleOne = () => {
-    setCount(count * 5);
+  const handleTimesFive = () => {
+    if (count !== 0) {
+      setCount(count * 5);
+    } else {
+      alert("Anything multiplied by 0 is equal to 0");
+    }
+  };
+  const handleDivideByHundred = () => {
+    if (count !== 0) {
+      setCount(count / 100);
+    } else {
+      alert("Division of 0 not allowed");
+    }
   };
 
   return (
@@ -40,8 +51,9 @@ function App() {
       <Counter count={count} />
       <button onClick={handlePlusOne}>PULSAME PARA SUMAR</button>
       <button onClick={handleMenosOne}>PULSAME PARA RESTAR</button>
-      <button onClick={handleMultipleOne}>
-        PULSAME PARA MULTIPLICAR POR 5
+      <button onClick={handleTimesFive}>PULSAME PARA MULTIPLICAR POR 5</button>
+      <button onClick={handleDivideByHundred}>
+        PULSAME PARA DIVIDIR POR 100
       </button>
     </div>
   );
