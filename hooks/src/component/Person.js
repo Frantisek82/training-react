@@ -20,7 +20,7 @@ function Person() {
 
   return (
     <div>
-      <h1>&lt;&lt;CHARACTER INFO&gt;&gt;</h1>
+      <h1>&lt;&#60;CHARACTER INFO&#62;&gt;</h1>
       <h2>NAME: {person.name}</h2>
       <h2>AGE: {person.age}</h2>
       <h2>ENEMY: {person.enemy}</h2>
