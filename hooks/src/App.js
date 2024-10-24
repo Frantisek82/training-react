@@ -1,5 +1,5 @@
 // import "./App.css";
-import { useState } from "react";
+// import { useState } from "react";
 import Person from "./component/Person";
 
 function App() {
