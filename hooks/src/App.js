@@ -35,7 +35,7 @@ function App() {
     if (count !== 0) {
       setCount(count * 5);
     } else {
-      alert("Anything multiplied by 0 is equal to 0");
+      alert("Anything multiplied by zero is equal to zero");
     }
   };
   const handleDivideByHundred = () => {
