@@ -42,7 +42,7 @@ function App() {
     if (count !== 0) {
       setCount(count / 100);
     } else {
-      alert("Division of 0 not allowed");
+      alert("Dividing zero with any number will always give us a zero");
     }
   };
 
