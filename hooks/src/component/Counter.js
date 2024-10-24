@@ -1,24 +1,3 @@
-import "./Counter.css";
-// // import { useState } from "react";
-// import Person from "./component/Person";
-
-// function App() {
-//   // const [count, setCount] = useState(0);
-
-//   return (
-//     <div>
-//       <Person />
-//       {/* <p>Has clicado {count} veces.</p> */}
-//       {/* <button onClick={() => setCount(count + 1)}>PULSAME</button> */}
-//     </div>
-//   );
-// }
-
-// export default Counter;
-
-//-----------------------------------------------------------------------------
-//Exercise
-//-----------------------------------------------------------------------------
 import ShowCounter from "./ShowCounter";
 import { useState } from "react";
 
@@ -55,10 +34,10 @@ function Counter() {
       <button onClick={handleDivideByHundred}>
         PULSAME PARA DIVIDIR POR 100
       </button>
+      {/* <p>Has clicado {count} veces.</p> */}
+      {/* <button onClick={() => setCount(count + 1)}>PULSAME</button> */}
     </div>
   );
 }
 
 export default Counter;
-
-//------------------------------------------------------------------------------
